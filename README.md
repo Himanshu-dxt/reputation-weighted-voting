@@ -1,10 +1,14 @@
 #Reputation-Weighted Voting
-A Stability-Oriented Proof of Concept for Decentralized Governance
+*A Stability-Oriented Proof of Concept for Decentralized Governance*
 
-Overview
+---
+
+## Overview
 This project is a minimal proof-of-concept demonstrating how an on-chain reputation system can improve stability in decentralization decision-making by weighting votes based on earned reputation rather than raw token ownership or wallet count.
 
-Problem
+---
+
+## Problem
 Decentralized govenrnance mechanisms frequently suffer from instability due to:
 
     1. Sybil attacks (mutliple wallets = multiple votes)
@@ -13,7 +17,9 @@ Decentralized govenrnance mechanisms frequently suffer from instability due to:
 
 These issues undermine trust and long-term sustainability in decentralized systems.
 
-Solution
+---
+
+## Solution
 We implement a lightweight, fully on-cahin voting mechanism where:
 
     1. Each participant has an on-chain reputation score
@@ -23,41 +29,53 @@ We implement a lightweight, fully on-cahin voting mechanism where:
 
 This isolates reputation logic as a reusable primitive for decentralized systems.
 
-Architecture
+---
+
+## Architecture
 
     1. Smart Contract: ReputationVote.sol
     2. On-chain state for votes and reputation
     3. Local Hardhat network for testing
     4. No off-chain services
 
-Key Properties
+---
+
+## Key Properties
 
     1. Unstoppable: fully on-chain logic
     2. Serverless: no backend dependencies
     3. Sybil-aware: influence accumulation is non-instant
     4. Minimal: small codebase, easy to audit
 
-Testing 
+---
+
+## Testing 
 The contract includes automated tests validating:
 
    1. Baseline reputation assignment
    2. Reputation-weighted votes calculation
    3. Prevention of double voting
 
+---
+
 Run tests with:
 
      npx hardhat test
 
-Scope & Intent
+---
+
+## Scope & Intent
 This project prioritizes:
 
    1. correctness over completeness
    2. clarity over feature count
    3. stability over novelty
 
-It is intended as a research-oriented artifact and a governance primitive...not a finished product
+It is intended as a research-oriented artifact and a governance primitive, not a finished product
 
-Future Work
+---
+
+## Future Work
 
    1. Decentralized reputation issuance
    2. Reputation decay mechanisms
