@@ -1,4 +1,4 @@
-#Reputation-Weighted Voting
+###Reputation-Weighted Voting
 *A Stability-Oriented Proof of Concept for Decentralized Governance*
 
 ---
